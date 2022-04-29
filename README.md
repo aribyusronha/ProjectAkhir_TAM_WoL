@@ -2,6 +2,6 @@
  Wonderfull of Lampung
 
 # Anggota Kelompok
-- Arib Yusron Hamdani\t(2017051078)
-- Wina Fadhilah \t\t(2017051056)
-- Ade Putra Maghribi\t(2057051022)
+- Arib Yusron Hamdani (2017051078)
+- Wina Fadhilah (2017051056)
+- Ade Putra Maghribi (2057051022)
