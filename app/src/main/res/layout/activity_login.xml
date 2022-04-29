@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/button"
+            android:elevation="@dimen/margin_all"
+            android:src="@drawable/logo"/>
+
+        <TextView
+            android:id="@+id/txt_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:textAlignment="center"
+            android:textSize="34dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:text="Email Addres/Username"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt_uname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:layout_marginRight="@dimen/margin_all"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shadow"
+            android:hint="Username"
+            android:inputType="text"
+            android:lines="1"
+            android:minHeight="48dp"
+            android:padding="@dimen/margin_all" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:text="Password"
+            android:textStyle="italic" />
+
+        <EditText
+            android:id="@+id/edt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:layout_marginRight="@dimen/margin_all"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shadow"
+            android:hint="Password"
+            android:inputType="text"
+            android:lines="1"
+            android:minHeight="48dp"
+            android:padding="@dimen/margin_all"
+            android:shadowColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_login"
+            style="@style/buton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all"
+            android:text="Login"
+            android:elevation="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_all"
+            android:layout_marginBottom="20dp"
+            android:text="Forget Password?"
+            android:textAlignment="viewEnd" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:text="Belum Punya akun?" />
+
+        <Button
+            android:id="@+id/btn_signup"
+            style="@style/buton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/margin_all"
+            android:text="Sign Up"
+            android:elevation="10dp"/>
+    </LinearLayout>
+</RelativeLayout>

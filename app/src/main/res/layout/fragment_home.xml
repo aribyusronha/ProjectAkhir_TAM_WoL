@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.home.HomeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Exploree Destination Lampung"
+            android:layout_margin="@dimen/margin_all"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/edt_pass"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="4"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:layout_marginRight="@dimen/margin_all"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/shadow"
+                android:drawableLeft="@drawable/ic_baseline_search"
+                android:hint="Find Your Trip"
+                android:inputType="text"
+                android:lines="1"
+                android:minHeight="48dp"
+                android:padding="@dimen/margin_all"
+                android:shadowColor="@color/black" />
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:drawableBottom="@drawable/ic_outline_filter"
+                android:layout_marginTop="3dp"
+                android:elevation="10dp"
+                android:layout_marginRight="@dimen/margin_all"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="new Destination"
+            android:textSize="14dp"
+            android:layout_margin="@dimen/margin_all"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shadow"
+            android:layout_marginLeft="@dimen/margin_all"
+            android:layout_marginRight="@dimen/margin_all">
+
+            <RelativeLayout
+                android:id="@+id/con_img1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:id="@+id/img_home1"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="@dimen/margin_all"
+                    android:layout_marginTop="@dimen/margin_all"
+                    android:layout_marginEnd="@dimen/margin_all"
+                    android:background="@drawable/shadow"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/img1" />
+
+                <TextView
+                    android:id="@+id/tv_namaDestinasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_home1"
+                    android:layout_marginLeft="@dimen/margin_all"
+                    android:text="Pulau Tegal" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/img_home1"
+                    android:layout_marginLeft="20dp"
+                    android:layout_toRightOf="@+id/tv_namaDestinasi"
+                    android:layout_alignEnd="@id/img_home1"
+                    android:textAlignment="viewEnd"
+                    android:textCursorDrawable="@drawable/ic_baseline_star_border"
+                    android:text="rating" />
+
+                <TextView
+                    android:id="@+id/tv_locDestinasi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_namaDestinasi"
+                    android:layout_marginLeft="@dimen/margin_all"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Lokasi" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/img_home2"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginRight="@dimen/margin_all"
+                android:layout_toRightOf="@+id/con_img1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/shadow"
+                android:src="@drawable/img2" />
+
+            <ImageButton
+                android:id="@+id/imgBtn_home3"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/img_home2"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginRight="@dimen/margin_all"
+                android:layout_toRightOf="@+id/con_img1"
+                android:scaleType="centerCrop"
+                android:background="@drawable/shadow"
+                android:src="@drawable/img3" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <Button
+                android:id="@+id/btn_cat1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_all"
+                android:drawableLeft="@drawable/ic_outline_beach"
+                android:text="beach"
+                android:textSize="8dp"/>
+            <Button
+                android:id="@+id/btn_cat2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_all"
+                android:drawableLeft="@drawable/ic_outline_landscape_24"
+                android:text="Extreme"
+                android:textSize="8dp" />
+            <Button
+                android:id="@+id/btn_cat3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_all"
+                android:drawableLeft="@drawable/ic_outline_school_24"
+                android:text="Education"
+                android:textSize="8dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageButton
+                android:id="@+id/btn_img1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:layout_margin="@dimen/margin_all"
+                android:src="@drawable/img4"
+                android:background="@drawable/shadow"/>
+            <ImageButton
+                android:id="@+id/btn_img2"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:layout_weight="1"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img5"
+                android:layout_margin="@dimen/margin_all"
+                android:background="@drawable/shadow"/>
+            <ImageButton
+                android:id="@+id/btn_img3"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:layout_weight="1"
+                android:src="@drawable/img6"
+                android:layout_margin="@dimen/margin_all"
+                android:background="@drawable/shadow"/>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
