@@ -3,59 +3,43 @@ package com.example.wol.ui.riwayat;
 import androidx.lifecycle.ViewModel;
 
 public class RiwayatViewModel extends ViewModel {
-    private String id;
-    private String tanggal;
-    private String tujuan;
-    private String kategori;
-    private String nominal;
+    private String nama;
+    private String lokasi;
+    private String harga;
 
-    void RiwayatViewModel(){
-        this.setId("");
-        this.setTanggal("");
-        this.setTujuan("");
-        this.setNominal("");
-        this.setKategori("");
-
+    public RiwayatViewModel() {
+        nama = "";
+        lokasi = "";
+        harga = "";
     }
 
-
-    public String getId() {
-        return id;
+    public RiwayatViewModel(String nama, String lokasi, String harga) {
+        this.setNama(nama);
+        this.setLokasi(lokasi);
+        this.setHarga(harga);
     }
 
-    public void setId(String id) {
-        this.id = id;
+    public String getNama() {
+        return nama;
     }
 
-    public String getTanggal() {
-        return tanggal;
+    public void setNama(String nama) {
+        this.nama = nama;
     }
 
-    public void setTanggal(String tanggal) {
-        this.tanggal = tanggal;
+    public String getLokasi() {
+        return lokasi;
     }
 
-    public String getTujuan() {
-        return tujuan;
+    public void setLokasi(String lokasi) {
+        this.lokasi = lokasi;
     }
 
-    public void setTujuan(String tujuan) {
-        this.tujuan = tujuan;
+    public String getHarga() {
+        return harga;
     }
 
-    public String getKategori() {
-        return kategori;
-    }
-
-    public void setKategori(String kategori) {
-        this.kategori = kategori;
-    }
-
-    public String getNominal() {
-        return nominal;
-    }
-
-    public void setNominal(String nominal) {
-        this.nominal = nominal;
+    public void setHarga(String harga) {
+        this.harga = harga;
     }
 }

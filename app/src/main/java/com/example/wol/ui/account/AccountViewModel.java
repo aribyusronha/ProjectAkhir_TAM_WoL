@@ -7,6 +7,7 @@ import androidx.lifecycle.ViewModel;
 public class AccountViewModel extends ViewModel {
     private final MutableLiveData<String> mText;
 
+
     public AccountViewModel() {
         mText = new MutableLiveData<>();
         mText.setValue("Anda Belum Login, Silahkan Login!!");

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContentActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/ln_desc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/img_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_all"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/tvNama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:text="nama"
+                android:textAlignment="center"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:textSize="24dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:text="Lokasi : "
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/tvLokasi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="20dp"
+                android:text="lokasi"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:text="Rating : "
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/tvRating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="20dp"
+                android:text="rating"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:text="Harga : "
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="20dp"
+                android:text="harga"
+                android:textSize="14dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold|italic"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="@dimen/margin_all"
+                android:text="Deskripsi : "
+                android:textSize="14dp"/>
+            <TextView
+                android:id="@+id/tvDeskripsi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/margin_all"
+                android:layout_marginLeft="20dp"
+                android:text="Deskripsi"
+                android:textSize="14dp"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_riwayat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/margin_all"
+            android:text="Masukkan ke Riwayat"
+            android:layout_below="@id/ln_desc"/>
+    </RelativeLayout>
+</ScrollView>

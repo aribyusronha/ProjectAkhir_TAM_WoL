@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "577569458790",
+    "project_id": "mywol-7b9c7",
+    "storage_bucket": "mywol-7b9c7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:577569458790:android:31e251c15a00b61c487ba7",
+        "android_client_info": {
+          "package_name": "com.example.wol"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "577569458790-i2378ovaqg71cb00e9s7f4vig7jhft9s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBqkgvjVh5GHismZ5BL1OHuh3WHE_RVx6w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "577569458790-i2378ovaqg71cb00e9s7f4vig7jhft9s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
