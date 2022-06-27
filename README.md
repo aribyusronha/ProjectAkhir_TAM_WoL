@@ -1,5 +1,5 @@
 # Project Akhir_TAM_WoL
- Wonderfull of Lampung
+ Wonderful of Lampung
 
 # Anggota Kelompok
 - Arib Yusron Hamdani (2017051078)
